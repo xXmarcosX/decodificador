@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Decodificador</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="image/Logo.jpg" alt="logo da alura">
+    </header>
+
+    <main class="main">
+        
+        <form>
+            <input type="textarea" placeholder="Digite seu texto" id="txtusuario" required>
+         </form>
+        
+        <div class="action">
+            <div class="action__txt">
+                <img src="image/bi_exclamation-circle-fill.png" alt="ponto de exclamação">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="action__btns">
+                <button onclick="criptografar()" id="btn">Criptografar</button>
+                <button onclick="descriptografar()" id="btn">Descriptografar</button>
+            </div>
+        </div>
+    
+        <div class="resultado">
+            <img id="resultado__image" src="image/High quality products 1 1.svg" alt="pessoa com lupa">
+            <h3 id="resultado__titulo">Nenhuma mensagem <br> encontrada</h3>
+            <p id="resultado__paragrafo">Digite um texto que você deseja 
+               <br> criptografar ou descriptografar</p>
+            <p id="resultado__txtcriptografado"></p>
+                <button onclick="copiar()" id="resultado__copiar">Copiar</button>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Desenvolvido por Marcos Vinicius da Silva</h3>
+    </footer>
+
+</body>
+
+</html>
